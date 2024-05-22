@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="Num1">
+    <input type="number" id="Num2">
+    <button onclick="createTable('table')">Create</button>
+    <h1 id="Sum"></h1>
+</body>
+
+</html>
+<script>
+    let Sum = document.getElementById('Sum')
+    let Num1 = document.getElementById('Num1')
+    let Num2 = document.getElementById('Num2')
+
+
+    function createTable() {
+        // Sum.innerHTML = ''
+        // if (Num1.value < Num2.value) {
+        //     // alert('Invalid format, first input should be less than the second input')
+        // } else {
+            for (let index = Num1.value; index <= Num2.value; index++) {
+                for (let i = 0; i <= 12; i++) {
+                    Sum.innerHTML += `<p> ${index} * ${i} = ${index * i}</p>`
+                }
+            }
+        }
+    
+</script>
